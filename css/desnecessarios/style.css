@@ -1,0 +1,276 @@
+html, body{
+  font-family: 'open sans', helvetica, arial, sans;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Lists */
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+#container{
+  position: relative;
+  padding: 10% 2%;
+  text-align: justify;
+}
+
+/* Menu Button */
+.menu-btn {
+  width: 100px;
+  padding: 10px;
+  background: #000;
+  color: #FFF;
+  text-align: center;
+  cursor: pointer;
+  border: 0px;
+  float: left;
+}
+
+.menu-btn:hover {
+  opacity: 0.6;
+}
+
+/* imagem background */
+.img-default{
+  border-width: 1px 4px 1px 4px;
+  border-top-color: #1D1D1D;
+  border-left-color: #040404;
+  border-right-color: #040404;
+  border-bottom-color: #1D1D1D;
+  border-style: solid;
+  border-radius: 2%;
+  margin-top: 2%;
+  margin-right: 15px;
+  width: 40%;
+  height: 40%;
+  float:left;
+  position: relative; 
+}
+
+  .home{
+      background-image: url('../img/home.jpg');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: top center;
+  }
+
+  .all{
+      background-image: url('../img/all.jpg');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: top center;
+  }
+
+  .mhd{
+      background-image: url('../img/mhd.jpg');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: top center;
+  }
+
+  .ppa{
+      background-image: url('../img/ppa.jpg');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: top center;
+  }
+
+  .mpr{
+      background-image: url('../img/mpr.jpg');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: top center;
+  }
+
+  .pci{
+      background-image: url('../img/pci.jpg');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: top center;
+  }
+
+  .cpu{
+      background-image: url('../img/cpu.jpg');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: top center;
+  }
+
+  .cns{
+      background-image: url('../img/cns.jpg');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: top center;
+  }
+
+  .mdr{
+      background-image: url('../img/mdr.jpg');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: top center;
+  }  
+
+  .fal{
+      background-image: url('../img/fal.jpg');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: top center;
+  }
+
+/* Status */
+.img-default .status{
+  background-color: red;
+  border-radius: 100%;
+  background-size: 100% 100%;
+  float: right;
+  position: absolute;
+  bottom: 1%;
+  right: 1%;
+  width: 19%;
+  height: 35%;
+  cursor: pointer;
+}
+
+.on{
+  background-image: url('../img/on.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  opacity: 0.95;
+  box-shadow: 0 0 7px green;
+}
+
+.on:hover{
+  opacity: 1;
+  box-shadow: 0 0 10px green;
+}
+
+.off{
+  background-image: url('../img/off.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  opacity: 0.95;
+  box-shadow: 0 0 7px red;
+}
+
+.off:hover{
+  opacity: 1;
+  box-shadow: 0 0 10px red;
+}
+
+/* Header */
+.site-header{
+  background-image: url('../img/logo.png'), url('../img/bg.png');
+  background-repeat: no-repeat, repeat;
+  background-position: top center;
+  background-size: 100% 100%, 16px 13px;
+  background-color: green;
+  border-bottom: 5px solid rgba(34, 64, 62, 1);
+  color: #FFF;
+  width: 100%;
+  height: 30%;
+  opacity: 0.85;
+  float:  left;
+  position: relative;
+}
+
+
+.site-header h1{
+  font-size: 2em;
+}
+
+.site-header h2{
+  font-size: 1.5em;
+}
+
+.site-header h3{
+  font-size: 1.2em;
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  
+  .site-header h1{
+    font-size: 2em;
+  }
+
+  .site-header h2{
+    font-size: 1.2em;
+  }
+
+  .site-header h3{
+    font-size: 1em;
+  }
+
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+
+  /* Header */
+  .site-header{
+    background-size: 140% 90%, 1px 3px;
+    width: 120%;
+    height: 80px;
+  }
+
+  .site-header h1{
+    font-size: 2em;
+  }
+
+  .site-header h2{
+    font-size: 1.2em;
+  }
+
+  .site-header h3{
+    font-size: 1em;
+  }
+
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+
+}
+
+.site-header .text{
+  width: 79%;
+  height: 20%;
+  float: right;
+  text-align: justify;
+  color: #251E19;
+
+}
+
+
+/* Footer */
+.site-footer{
+  position: relative;
+  color:  #000;
+  font-weight: bold;
+  border-top: 1px solid #EEE;
+  padding: 1%;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+/* Logon */
+.logout{
+  float:  right;
+  margin-top: 8px;
+  margin-right: 15px;
+}
+
+.logout a{
+  color:  white;
+  text-decoration: none;
+
+}
